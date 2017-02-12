@@ -3,7 +3,7 @@
 var res = document.getElementById('result'),
 	expression = document.getElementById('expression'),
 	out = document.querySelector('#out'),
-	button = document.querySelectorAll('button'),
+	button = document.querySelectorAll('p'),
 	count = 0,
 	operator = false,
 	localNumber,

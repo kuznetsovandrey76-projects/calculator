@@ -1,61 +1,83 @@
 * {
-margin: 0;
-padding: 0;
-font-family: 'Handlee', sans-serif;
-}
-.border, button {
-	-webkit-border-radius: 10px;
-    border-radius: 10px;		
-}
-#result {
-	display: block;
-	height: 100px;
-	width: 100%;
-	padding: 35px 15px;
+	margin: 0;
+	padding: 0; 
+	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	margin-bottom: 5px;
-	background: lightblue;
-	font-size: 3em;
-	text-align: right;
-	border: 1px solid
-}
-#expression {
-	height: 30px;
-	font-size: 1.5em;
-	position: absolute;
-	text-align: right;
-	width: 90%;
-	border: none;
-	padding-top: 5px;
-	font-family: sans-serif;
-}
-button {
-	width: 100px;
-	height: 100px;
-	margin: 4px 3px;
-	background: orange;
-	font-size: 3em;
-	display: inline;
-	-webkit-box-shadow: 2px 2px 5px black;
-	        box-shadow: 2px 2px 5px black;
-	cursor: pointer;
-}
-#plus {
-	height:208px;
-	position: absolute;
-	top: 508px;
-	left: 346px;
-}
-#calc {
-	width: 438px;
+	box-sizing: border-box;
+	font-family: 'Handlee', sans-serif;
+} 
+ 
+body {
+	background: url("desk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	display: table;
+	height: 100vh;
+	width: 100%; 
+} 
+
+.calculator {
+	display: table-cell;
 	margin: 1em auto;
 	position: relative;
-	background: khaki;
-	padding: 1em;
-	border: 1px solid;	
+	vertical-align: middle;
+	text-align: right;
+} 
+ 
+.calculator--additional {
+	border: 1px solid;
+	padding: .6em;
+	background: #292f36;
+	margin: 0 auto;
+	width: 60%; 
+	-webkit-border-radius: 1em;
+	        border-radius: 1em;
+} 
+ 
+.calculator__button {
+	-webkit-box-shadow: 2px 2px 5px black;
+	background: #e0e0e0;
+	box-shadow: 2px 2px 5px black;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 3em;
+	height: 100px;
+	width: 24%; 
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	margin: .5%; 
+	line-height: 2;
+
+} 
+.calculator__button--action {
+	background: #ff8c00;
+	border: 1px solid #ff8c00;
+	color: white;
 }
-.zero {
-	width: 210px;
-}
+ 
+.calculator__button--zero { 
+	width: 48.8%; 
+} 
+ 
+.calculator__result {
+	background: #C7C7B0;
+	display: block;
+	font-size: 3em;
+	height: 100px;
+	margin-bottom: 5px;
+	padding: .5em .1em;
+	}
+
+.calculator__expression {
+	font-family: sans-serif;
+	font-size: 1.5em;
+	height: 30px;
+	padding-top: 5px;
+	position: relative;
+	top: 1em;
+	right: .2em;
+} 
+ 
+ 
